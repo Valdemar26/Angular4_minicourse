@@ -1,0 +1,13 @@
+<div class="col-sm-4">
+  <div class="card" style="width: 20rem;">
+    <img class="card-img-top img-responsive"
+         src="{{ user.image }}"
+         alt="Card image cap" style="width: 100%;">
+    <div class="card-block">
+      <h4 class="card-title" [ngClass]="{'marked': isMarked}">{{ user.name }}</h4>
+      <p class="card-text">{{ user.geo }}</p>
+      <a href="#" (click)="onClick()" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
